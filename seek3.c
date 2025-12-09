@@ -2,6 +2,9 @@
 
 int main (){
     FILE* arq= fopen("arq.txt", "r+");
+    long tamanho;
+    long meio;
+    char* resto;
     if(!arq){
         printf("Erro ao abrir o arquivo!");
         return 1;
